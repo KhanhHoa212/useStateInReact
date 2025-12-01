@@ -40,6 +40,11 @@ function App() {
         <button onClick={handleAddToList}>Add to list</button>
       </div>
       <h3>Danh sách các nhiệm vụ</h3>
+      <select>
+        <option>All task</option>
+        <option>Done</option>
+        <option>Not yet</option>
+      </select>
       <ul className="todo-list">
         {todos.map(todo => (
           <li key={todo.id}>
